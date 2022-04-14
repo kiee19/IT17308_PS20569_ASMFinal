@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/dangky.css">
+  <title>Login-Đăng nhập tài khoản</title>
+  <script src="js/dangnhap.js"></script>
+  <style>
+    .container {
+      width: 500px;
+      margin: auto;
+      background-color: aquamarine;
+      padding: 16px;
+      border: 1px solid #ccc;
+    }
+    .font {
+      text-align: center;
+    }
+    button {
+      padding:6px;
+      border-radius: 6px;
+      border: none;
+      background-color:antiquewhite;
+    }
+    button:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
+    .one {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <form name="formdk" onsubmit=" return kiemtra();" class="container">
+    <p class="font">ĐĂNG NHẬP</p>
+    <hr>
+    <p>
+      <label>Số điện thoại/Email</label>
+      <input type="text" name="sodienthoai" id="sodienthoai" class="txt" />
+    </p>
+    <p>
+      <label>Mật Khẩu</label>
+      <input type="text" name="pass" id="password" class="txt" />
+    </p>
+    <div id="baoloi"></div>
+    <div class="one">
+      <button type="submit" id="dangky">Đăng Nhập</button>
+    </div>
+</body>
+
+</html>
